@@ -1,0 +1,88 @@
+a {
+  color: $aqua;
+
+  &:hover {
+    color: $dark-aqua;
+    text-decoration: none;
+  }
+}
+
+.btn-wrapper {
+  @include below($sm-breakpoint) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+a.btn {
+  color:            white;
+  height:           $button-size;
+  display:          inline-block;
+  vertical-align:   middle;
+  background:       $blue;
+  line-height:      $button-size;
+  text: {
+    align: center;
+    decoration: none;
+    overflow: ellipsis;
+  }
+  word-wrap: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  font: {
+    size:   16px;
+    weight: bold;
+    family: $sans;
+  }
+
+  &:hover {
+    background: darken($blue, 15%);
+  }
+
+  border-radius: $button-size;
+
+  &.btn-action {
+    padding: 0 20px;
+    background-color: $aqua;
+    color: white;
+    &:hover {
+      background: darken($aqua, 15%);
+    }
+  }
+}
+
+.btn-action {
+  text-align: center;
+
+  &.btn {
+    margin-top: 30px;
+    display: inline-block;
+
+    @include below($med-breakpoint) {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    @include below($sm-breakpoint) {
+      width: 85%;
+    }
+  }
+
+  &.secondary-color {
+    margin-left: 25px;
+    &.btn {
+      background: #29C8A4;
+      &:hover {
+        background-color: darken(#29C8A4, 5%)
+      }
+    }
+    @include below($sm-breakpoint) {
+      width: 85%;
+      margin: 20px 0;
+    }
+  }
+}
+
+.section-header {
+  margin-bottom: $center_pad;
+}

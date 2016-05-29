@@ -1,0 +1,183 @@
+.featured_videos {
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  p:last-of-type {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .video_slideshow_scroller {
+    overflow: hidden;
+
+    .prev, .next {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 900;
+      text-align: center;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 50px;
+      top: 50%;
+      margin-top: -25px;
+      outline: none;
+      &:focus,
+      &:hover {
+        background-color: darken($mint, 5%);
+      }
+
+    }
+
+    .prev {
+      left: 0;
+      background: $mint url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 768 768"><path fill="%23fff" d="M493.28 237.28l-45.28-45.28-192 192 192 192 45.28-45.28-146.72-146.72z"></path></svg>') no-repeat 45% center;
+    }
+
+    .next {
+      right: 0;
+      background: $mint url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 768 768"><path fill="%23fff" d="M320 192l-45.28 45.28 146.72 146.72-146.72 146.72 45.28 45.28 192-192z"></path></svg>') no-repeat 55% center;
+    }
+
+    .video_slideshow {
+      white-space: nowrap;
+      transition: transform .6s ease-in-out;
+
+      .video_slide {
+        width: 470px;
+        display: inline-block;
+        margin-right: 40px;
+
+        @include below($sm-breakpoint) {
+          width: 100%;
+        }
+
+        .vid {
+          margin-bottom: 20px;
+          border-radius: 10px;
+          width: 100%;
+          float: left;
+          position: relative;
+          .vid-player {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 320px;
+            position:relative;
+            width: 100%;
+            border: 1px solid $light-grey;
+          }
+          .youtube-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -42px;
+            margin-top: -30px;
+            display: inline-block;
+            width: 85px;
+            height: 60px;
+            cursor: pointer;
+            color: #1F1F1F;
+            &:hover{
+              color: $red;
+            }
+          }
+
+          p {
+            font-size: $mid-font;
+            line-height: 16px;
+            font-family: $sans;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          @include below($med-breakpoint) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* http://tympanus.net/Development/ClickEffects (ivana) */
+.cbutton--effect::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -35px 0 0 -35px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cbutton--effect::before,
+.cbutton--effect::after {
+  box-shadow: 0 0 0 2px $mint;
+}
+
+.cbutton--effect.cbutton--click::before {
+  -webkit-animation: ripple-1 0.5s forwards;
+  animation: ripple-1 0.5s forwards;
+}
+
+.cbutton--effect.cbutton--click::after {
+  -webkit-animation: ripple-2 0.5s forwards;
+  animation: ripple-2 0.5s forwards;
+}
+
+@-webkit-keyframes ripple-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes ripple-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@-webkit-keyframes ripple-2 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  50%, 100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+  }
+}
+
+@keyframes ripple-2 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  50%, 100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+  }
+}

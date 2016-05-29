@@ -1,0 +1,14 @@
+/**
+*  all the CSS declarations, hacks and things 
+*  we are not proud of: 
+*  http://sass-guidelin.es/#shame-file
+*  http://csswizardry.com/2013/04/shame-css/
+*/
+
+// original commit: http://git.io/vedwO
+// transifex shows a selector for languages
+// I want to hide this since it will automatically
+// translate the page for people based on their local.
+#tx-live-lang-container {
+  display: none
+}

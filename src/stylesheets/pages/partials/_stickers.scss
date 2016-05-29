@@ -1,0 +1,21 @@
+.stickers {
+  @include below(700px) { display: none; }
+}
+
+.sticker-pics {
+  width: $col-2-3 - 8%;
+  text-align: center;
+
+  .stickers {
+    margin-right: 100px;
+  }
+}
+
+.sticker-order {
+  width: $col-1-3;
+
+  p {
+    font-size: $mid-font;
+    padding-bottom: 10px;
+  }
+}

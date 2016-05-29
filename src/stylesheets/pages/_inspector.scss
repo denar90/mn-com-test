@@ -1,0 +1,246 @@
+// inspector page specific styles and fixes
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: $light-blue;
+  border-bottom: solid 1px #bad1e1;
+}
+
+h2 {
+  font-size: 21px;
+  margin-bottom: 18px;
+  color: $red;
+  display: inline-block;
+}
+
+.header-cta {
+  overflow: hidden;
+  max-width: 1000px;
+  padding: 25px 50px 0;
+  margin: 0 auto;
+
+  @include below(680px) {
+    text-align: center;
+  }
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+
+  @include below(680px) {
+    float: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+}
+
+.main-logo {
+  width: 220px;
+  @include clearfix;
+
+  img {
+    float: left;
+    height: 85px;
+  }
+}
+
+.logo-copy {
+  text-align: left;
+
+  img {
+    height: 24px;
+    position: relative;
+    top: -60px;
+    left: 73px;
+  }
+}
+
+h1 {
+  font-size: 21px;
+  position: relative;
+  top: -55px;
+  left: 88px;
+}
+
+footer {
+  border-top: solid 1px #e3ecf1;
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.footer-actions {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    padding: 15px;
+    color: $dark-gray;
+    transition: all 200ms ease;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: darken($dark-gray, 15%);
+      text-decoration: underline;
+    }
+  }
+
+  svg, img {
+    float: left;
+    display: inline-block;
+    position: relative;
+    margin-right: 6px;
+  }
+}
+
+.download.btn {
+  float: right;
+  border: solid 2px #CCC;
+  display: inline-block;
+  width: 144px;
+  border-radius: 4px;
+  position: relative;
+  padding: 16px;
+  padding-left: 47px;
+  padding-bottom: 11px;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #000;
+
+  @include below(680px) {
+    float: none;
+    margin: 0;
+  }
+
+  .chrome-icon {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  p {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12px;
+    color: $dark-gray;
+  }
+}
+
+.browser-frame {
+  margin: 40px auto -75px;
+  max-width: 868px;
+  width: 100%;
+  box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.27);
+  font-size: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.browser-header {
+  border-radius: 3px 3px 0px 0px;
+  height: 29px;
+  width: 100%;
+  background: #dfe3e6; /* Old browsers */
+  background: linear-gradient(to bottom, #dfe3e6 0%, #e0e1e3 8%, #d9dadc 73%, #d7dbde 85%, #d7d8da 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe3e6', endColorstr='#d7d8da',GradientType=0 ); /* IE6-9 */
+
+  .actions {
+    float: left;
+    margin-left: 5px;
+    display: inline-block;
+
+    .close, .min, .max {
+      float: left;
+      display: inline-block;
+      @include size(10px);
+      border-radius: 50%;
+      margin: 11px 0 0 6px;
+    }
+
+    .close {
+      background: #ff634e;
+    }
+
+    .min {
+      background: #ffc108;
+    }
+
+    .max {
+      background: #09cb34;
+    }
+  }
+}
+
+.features {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 165px;
+  padding: 0 30px;
+}
+
+// [renamed] see #324
+.grid-row {
+  overflow: hidden;
+
+  &.last {
+    margin-top: 40px;
+
+    @include below(680px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.feature-block {
+  width: 33.33%;
+  float: left;
+
+  @include below(680px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: $dark-gray;
+    line-height: 31px;
+    margin-right: 20px;
+  }
+
+  a {
+    color: $aqua;
+
+    &:hover {
+      color: $dark-aqua;
+      text-decoration: none;
+    }
+  }
+
+  svg {
+    width: 60px;
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: text-bottom;
+  }
+}

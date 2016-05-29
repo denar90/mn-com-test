@@ -1,0 +1,33 @@
+section.featured_videos.column-contain
+  h2 Videos
+  .video_slideshow_scroller
+    a.prev(role="button", href="#")
+      span.cbutton--effect
+        i.fa.fa-angle-left
+        span.hidden-visually Previous video
+    .video_slideshow("data-cycle-slides" = ".video_slide")
+      each video in videos
+        .video_slide
+          .vid(itemscope, itemtype="http://schema.org/VideoObject")
+            div.vid-player(style="background-image:url(images/youtube/#{video.id}.jpg)", data-vid-id="#{video.id}")
+              svg.youtube-play
+                use(xlink:href="#play")
+            .hidden-visually
+              h3(itemprop="name") #{video.name}
+              p(itemprop="description") #{video.description}
+              meta(itemprop="embedUrl", content="https://youtube.googleapis.com/v/#{video.id}")
+              meta(itemprop="author", content="#{video.author}")
+              meta(itemprop="duration", content="#{video.duration}")
+              meta(itemprop="isFamilyFriendly", content="true")
+              meta(itemprop="thumbnail", content="images/youtube/#{video.id}.jpg")
+              meta(itemprop="url", content="https://youtube.googleapis.com/watch?v=#{video.id}")
+            p(itemprop="alternativeHeadline") #{video.title}
+              if video.link
+                |  (
+                a(href="#{video.link.url}", target="_blank") #{video.link.title}
+                |)
+    a.next(role="button", href="#")
+      span.cbutton--effect
+        i.fa.fa-angle-right
+        span.hidden-visually Next video
+  .cl

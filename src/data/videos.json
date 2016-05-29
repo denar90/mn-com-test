@@ -1,0 +1,121 @@
+[
+
+  {
+    "author": "James Smith",
+    "duration": "T28M44S",
+    "id": "EvQnntaqVdE",
+    "name": "James Smith  - Marionette The Backbone Framework",
+    "title": "Marionette - The Backbone Framework"
+  },
+
+  {
+    "author": "Jason Laster",
+    "description": "Jason Laster, a core contributor to Marionette, gives us a quick intro to Marionette / Backbone.",
+    "duration": "T08M20S",
+    "id": "7yZKsgKxziw",
+    "name": "Building Beautiful Apps with Marionette",
+    "title": "Marionette 101"
+  },
+
+  {
+    "author": "Sam Saccone",
+    "description": "Sam Saccone explains how to deal with nested views in Marionette.\n\nSlides: http://mbx.cm/t/jsbVb\n\nSponsored by: http://www.infor.com\nMarionette.js: http://marionettejs.com\nDancing with Marionette Meet...",
+    "duration": "T10M19S",
+    "id": "CTr-tTwRH3o",
+    "name": "Nesting Your Views in Marionette",
+    "title": "Nesting Your Views in Marionette"
+  },
+
+  {
+    "author": "Jason Laster",
+    "description": "Jason Laster explains how to use Marionette Behaviors.\n\nSlides: http://mbx.cm/t/9GBSw\n\nSponsored by: http://www.infor.com\nMarionette.js: http://marionettejs.com\nDancing with Marionette Meetup: http://...",
+    "duration": "T18M24S",
+    "id": "6wvAswHkarE",
+    "name": "Marionette Behaviors",
+    "title": "Marionette Behaviors"
+  },
+
+  {
+    "author": "James Smith",
+    "description": "James Smith explains how you can use Backbone.Wreqr.\n\nSlides: http://mbx.cm/t/TtNgU\n\nSponsored by: http://www.infor.com\nMarionette.js: http://marionettejs.com\nDancing with Marionette Meetup: http://ww...",
+    "duration": "T17M16S",
+    "id": "2b1G3TdlQEU",
+    "name": "Backbone.Wreqr",
+    "title": "Backbone.Wreqr"
+  },
+
+  {
+    "author": "Jason Laster",
+    "duration": "T38M08S",
+    "id": "jbGm3mJXh_s",
+    "link": {
+      "url": "https://chrome.google.com/webstore/detail/marionette-inspector/fbgfjlockdhidoaempmjcddibjklhpka?hl=en",
+      "title": "Marionette Inspector"
+    },
+    "name": "Jason Laster - Backbone under the Magnifying Glass Tools for Exploring and Debugging Your Apps",
+    "title": "Backbone Under the Magnifying Glass"
+  },
+
+  {
+    "author": "Kurt Kemple",
+    "description": "Kurt Kemple, frontend architect at ServiceChannel, shows how Browserify can help you develop Backbone + Marionette applications more efficiently. Slides: http://kkemple.github.io/slides.browserify-marionette/ Marionette presentation app with Browserify:\n\nhttps://github.com/kkemple/talks.browserify-marionette Sponsored by: http://www.infor.com Marionette.js: http://marionettejs.com Dancing with Marionette Meetup: http://www.meetup.com/Dancing-with-Marionette-js Marionette Chat Room: https://gitter.im/marionettejs/backbone.marionette\n\nKurt Kemple: http://twitter.com/kurtiskemple Kurt’s Anti-Bio: When not coding, you can find Kurt longboarding in the mountains in upstate NY.",
+    "duration": "T20M32S",
+    "id": "7bGWuyuLK_4",
+    "link": {
+      "url": "http://iamnotarealprogrammer.com/slides.browserify-marionette/",
+      "title": "slides"
+    },
+    "name": "Browserify + Marionette = Better Apps",
+    "title": "Browserify + Marionette = Better Apps"
+  },
+
+  {
+    "author": "Jason Laster",
+    "description": "Jason is a Software Engineer at Etsy and a core contributor to Marionette. In this talk, he shows us all of his tricks for debugging a Marionette app.\n\nSponsored by: http://www.infor.com\nMarionette.js...",
+    "duration": "T19M45S",
+    "id": "75d0odmbu38",
+    "name": "Using DevTools for Marionette Debugging",
+    "title": "Using DevTools for Marionette Debugging"
+  },
+
+  {
+    "author": "Sam Moore",
+    "description": "The Betterment team have a need to load data from their APIs before they render a \"page\" in their Marionette app. They used to do this with the Marionette.Async plugin, but when that project died off, they decided to try a different approach. They ended up building a more powerful router; this is that story (told by their lead engineer, Sam Moore). Slides: http://goo.gl/rkWcb2 Backbone.Blazer: https://github.com/Betterment/backbone.blazer Sponsored by: http://www.betterment.com Marionette.js: http://marionettejs.com Dancing with Marionette Meetup: http://www.meetup.com/Dancing-with-Marionette-js Marionette Chat Room: https://gitter.im/marionettejs/backbone.marionette Sam Moore: https://twitter.com/samandmoore Sam's Anti-Bio: I love woodworking, but I hardly ever do it anymore. I have an obsession with garden gnomes. I think that Ruby can save the world.",
+    "duration": "T20M43S",
+    "id": "F32QhaHFn1k",
+    "link": {
+      "url": "https://github.com/Betterment/backbone.blazer",
+      "title": "Backbone.Blazer"
+    },
+    "name": "Routing Made Better",
+    "title": "Routing Made Better"
+  },
+
+  {
+    "author": "Brian Mann",
+    "description": "Brian Mann demonstrates how to build modular Backbone apps using Marionette JS instead of building your application's infrastructure from scratch.\n\nFor more information on Brian or BackboneConf, visit...",
+    "duration": "T46M29S",
+    "id": "qWr7x9wk6_c",
+    "name": "Brian Mann - The tools and patterns for building large-scale Backbone applications",
+    "title": "Brian Mann talks about building applications with Marionette"
+  },
+
+  {
+    "author": "Amy Palamountain",
+    "description": "Amy Palamountain from GreenButton on Unsucking Your Backbone",
+    "duration": "T40M38S",
+    "id": "0o2whtCJw8I",
+    "name": "Codemania 2013: Amy Palamountain on Backbone and Marionette",
+    "title": "Unsuck Your Backbone"
+  },
+
+  {
+    "author": "Derick Bailey",
+    "description": "This is a talk that Derick Bailey gave to the Houston Open Development User Group on April 4th 2013.\n\nhttp://www.meetup.com/Houston-Open-Development-User-Group/events/110571032/\n\nThe code is availble ...",
+    "duration": "T01H48M31S",
+    "id": "VERQEr-bVTs",
+    "name": "Backbone.js with Derick Bailey - April 2013",
+    "title": "From jQuery to Backbone/Marionette"
+  }
+
+]

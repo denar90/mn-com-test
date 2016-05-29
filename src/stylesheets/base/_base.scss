@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  color:                  $gray;
+  line-height:            32px;
+  -webkit-font-smoothing: antialiased;
+
+  font: {
+    size:   $large-font;
+    family: $sans;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+section {
+  padding: 50px 0;
+
+  @include below(900px) {
+    padding: 20px;
+  }
+}
+
+.column-contain {
+  padding-left: $center_pad;
+  padding-right: $center_pad;
+  border-top: 1px solid darken($light-blue, 3%);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+//
+// WARN: DEPRECATED
+// do not work here on columns
+// please see layout/_grid.css
+// for grid system
+//
+.col-1-3 {
+  width: 33.33%;
+
+  @include below($adaptive-snap) {
+    width: 100%;
+  }
+}
+
+.col-1-2 {
+  width: 50%;
+
+  @include below($adaptive-snap) {
+    width: 100%;
+  }
+}
+
+.col-2-3 {
+  width: 66.66%;
+
+  @include below($adaptive-snap) {
+    width: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+}
+
+h2, h3,
+.h2, .h3 {
+  line-height: 30px;
+  color: $red;
+  margin-bottom: 15px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+p {
+  color: #56585E;
+  line-height: 30px;
+  font: {
+    size:   $large-font;
+    family: $sans;
+  }
+}
+
+pre {
+  padding:    20px;
+  font-size:  $small-font;
+}
+
+pre, code {
+  color:         yellow;
+  border:        0;
+  background:    none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear,
+.cl {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-xs {
+  @include below($sm-breakpoint) {
+    display: none;
+  }
+}
+
+// screen readers only
+// h5pb: http://git.io/byNN
+.hidden-visually {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

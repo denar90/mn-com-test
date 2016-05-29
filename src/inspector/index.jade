@@ -1,0 +1,88 @@
+extends ../layouts/inspector-layout
+
+block vars
+  -bodyClass = "inspector-page";
+
+block content
+  .marionette-inspector
+    header
+      .header-cta
+        .left.logo
+          a(href="/")
+            .main-logo
+              include ../partials/_marionette_logo
+            .logo-copy
+              include ../partials/_marionette_text
+              h1 Inspector
+        a.right.download.btn(itemprop="downloadUrl", href="http://chrome.google.com/webstore/detail/marionette-inspector/fbgfjlockdhidoaempmjcddibjklhpka", target= "_blank")
+          img.chrome-icon(src="/images/inspector/chrome.png", alt="", height="50px")
+          p
+            small Available in the
+            |  Chrome Web Store
+      .browser-frame
+        .browser-header
+          div.actions
+            div.close
+            div.min
+            div.max
+        img(itemprop="image", src="/images/inspector/inspector-preview.png", alt="Marionette Inspector tab active in the Google Chrome browser examining a TodoMVC application")
+    div.features
+      ul.grid-row
+        li.feature-block
+          h2
+            svg
+              use(xlink:href="#understand-icon")
+            | Understand
+          p Get an overview of how your app works without needing to understand all the code.&nbsp;
+            a(href = "http://youtu.be/jbGm3mJXh_s", target= "_blank") See it in action
+            | .
+        li.feature-block
+          h2
+            svg
+              use(xlink:href="#visualize-icon")
+            | Visualize
+          p See the view hierarchy with the UI tree along with app activity and history.&nbsp;
+            a(href = "http://www.marionettewires.com", target= "_blank") Try it out on a live app!
+        li.feature-block
+          h2
+            svg
+              use(xlink:href="#inspect-icon")
+            | Inspect
+          p Explore your views, UI, events, listeners, models, attributes, and print them to the console as variables with one click!
+      ul.grid-row.last
+        li.feature-block
+          h2
+            svg
+              use(xlink:href="#explore-icon")
+            | Explore
+          p Use the handy Inspector glass to dive into your radio channels, requests, commands, and app.
+        li.feature-block
+          h2
+            svg
+              use(xlink:href="#jump-icon")
+            | Jump
+          p With intelligent linking, jump between elements of your app and the source in a snap.
+        li.feature-block
+          h2
+            svg
+              use(xlink:href="#customize-icon")
+            | Customize
+          p Curious how it works? Want to add a feature? The Inspector is developed in the open. Get involved!
+  footer
+    ul.footer-actions
+      li.chat
+        a(href="https://gitter.im/marionettejs/marionette.inspector?utm_source=share-link&utm_medium=link&utm_campaign=share-link", target= "_blank")
+          svg.support-link-icon(width="18", height="18")
+            use(xlink:href="#gitter-square")
+          | Chat with us!
+
+      li.github
+        a(itemprop="url", href="https://github.com/marionettejs/marionette.inspector", target= "_blank")
+          svg.support-link-icon(width="18", height="18")
+            use(xlink:href="#github-square")
+          | Fork me on GitHub!
+
+      li.etsy
+        a(href="http://etsy.com", target= "_blank")
+          img.support-link-icon(src="/images/etsy-favicon.jpg", width="18", height="18", alt="Etsy, Inc. logo")
+          | Sponsored by Etsy!

@@ -1,0 +1,85 @@
+section.example-apps.column-contain
+  h2 Example Apps
+  .row
+    .example.col-4(itemscope, itemtype="http://schema.org/WebApplication")
+      header
+        h3(itemprop="name") Marionette Wires
+        link(itemprop="applicationCategory", href="http://schema.org/WebApplication")
+        a.link(href="http://www.marionettewires.com", itemprop="url", target= "_blank")
+          img(src="images/screenshots/wires.png", alt="Marionette Wires", itemprop="screenshot")
+      p.description(itemprop="description").
+        An opinionated Marionette starter app.
+      small.hidden-visually(itemprop="operatingSystem").
+        Requirements: modern web browsers
+      ul(itemprop="featureList")
+        li Browserify
+        li Babel (ES6)
+        li Handlebars
+        li Gulp
+        li Mocha + Chai
+        li Sinon
+        li
+          a(href="http://pioneerjs.com", target = "_blank") Pioneer
+      .cl
+      .btn-wrapper
+        a.btn.btn-action(href="https://github.com/thejameskyle/marionette-wires", itemoprop="sameAs", target= "_blank") View Source
+
+    .example.col-4(itemscope, itemtype="http://schema.org/WebApplication")
+      header
+        h3(itemprop="name") Gistbook
+        link(itemprop="applicationCategory", href="http://schema.org/WebApplication")
+        img(src="images/screenshots/gistbook.png", itemprop="screenshot", alt="Gistbook")
+      p.description(itemprop="description").
+        An app to write about technical subjects
+      small.hidden-visually(itemprop="operatingSystem").
+        Requirements: modern web browsers
+      ul(itemprop="featureList")
+        li Webpack
+        li Babel (ES6)
+        li Handlebars
+        li Grunt
+      .cl
+      .btn-wrapper
+        a.btn.btn-action(href="https://github.com/jmeas/gistbook", itemprop="sameAs", target= "_blank") View Source
+
+    .example.col-4(itemscope, itemtype="http://schema.org/WebApplication")
+      header
+        h3(itemprop="name") Edit
+        link(itemprop="applicationCategory", href="http://schema.org/WebApplication")
+        a.link(href="http://www.edit.sx", itemprop="url", target= "_blank")
+          img(src="images/screenshots/edit.png", itemprop="screenshot", alt="Edit")
+      p.description(itemprop="description").
+        A collaborative tool to share photographs.
+      small.hidden-visually(itemprop="operatingSystem").
+        Requirements: modern web browsers
+      ul(itemprop="featureList")
+        li CoffeeScript
+        li
+          a(href="https://parse.com", target = "_blank") Parse
+        li
+          a(href="http://roots.cx", target = "_blank") Roots
+      .cl
+      .btn-wrapper
+        a.btn.btn-action(href="https://github.com/samccone/edit.sx-frontend", itemprop="sameAs", target= "_blank") View Source
+        
+    .example.col-4(itemscope, itemtype="http://schema.org/WebApplication")
+      header
+        h3(itemprop="name") Streamus
+        link(itemprop="applicationCategory", href="http://schema.org/WebApplication")
+        a.link(href="https://github.com/MeoMix/StreamusChromeExtension", itemprop="url", target= "_blank")
+          img(src="images/screenshots/streamus.png", itemprop="screenshot", alt="Streamus")
+      p.description(itemprop="description").
+        A YouTube video player Chrome extension.
+      small.hidden-visually(itemprop="operatingSystem").
+        Requirements: modern web browsers
+      ul(itemprop="featureList")
+        li 
+          a(href="http://jspm.io/", target = "_blank") Jspm
+        li Babel (ES6)
+        li Handlebars
+        li Grunt
+        li Mocha + Chai
+        li Sinon
+      .cl
+      .btn-wrapper
+        a.btn.btn-action(href = "https://github.com/MeoMix/StreamusChromeExtension", itemprop="sameAs", target= "_blank") View Source

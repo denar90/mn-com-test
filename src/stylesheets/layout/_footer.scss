@@ -1,0 +1,30 @@
+$footer-text-color: #b0c9d8;
+$footer-background-color: $light-blue;
+
+footer {
+
+  background-color: $footer-background-color;
+  padding: 20px 0;
+  border-top: 1px solid darken($footer-background-color, 15%);
+  text-align: center;
+  min-heigth: 120px;
+
+  p {
+    font-size: $mid-font;
+    color: $footer-text-color;
+
+    a {
+      color: $footer-text-color;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: darken($footer-text-color , 15%);
+        text-decoration: underline;
+      }
+
+    }
+  }
+}

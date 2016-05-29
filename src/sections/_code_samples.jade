@@ -1,0 +1,40 @@
+section.code-samples.column-contain.hidden-xs
+  h2.hidden-visually Code Samples
+  .code-sample-block.first-sample-block.equal-heights-js
+      h3.code-header Define view classes
+      pre.prettyprint
+        code.notranslate.
+          var SingleLink = Marionette.ItemView.extend({
+            tagName: "li",
+            template: _.template("&lt;a href='&lt;%-path%>'>&lt;%-path%>&lt;/a>")
+          });
+
+          var ListView = Marionette.CollectionView.extend({
+            tagName: 'ul',
+            childView: SingleLink
+          });
+
+  .code-sample-block.second-sample-block.equal-heights-js
+    h3.code-header Pass in data
+    pre.prettyprint
+      code.notranslate.
+        var list = new Backbone.Collection([
+          {path: 'http://google.com'},
+          {path: 'http://mojotech.com'},
+        ]);
+
+        (new ListView({
+          collection: list,
+          el: '.link-area'
+        })).render();
+
+  .code-sample-block.code-results-block.equal-heights-js
+    h3.code-header.code-header-results Results
+    .result
+      ul
+        li
+          a.notranslate(href="http://google.com", target="_blank") http://google.com
+        li
+          a.notranslate(href="http://mojotech.com", target="_blank") http://mojotech.com
+    .cl
+  .cl

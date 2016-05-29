@@ -1,0 +1,15 @@
+include _nav
+.masthead
+  .wrapper
+    .left
+      //- we inline svg by using data:image
+      //- keep clean markup in development by includes
+      include ../partials/_marionette_logo
+      include ../partials/_marionette_text
+    .right
+      h1(itemprop="alternativeHeadline") The Backbone Framework
+      p(itemprop="description") Marionette simplifies your Backbone application code with robust views and architecture solutions.
+      a.btn.btn-action(href = "#download")
+        | Download&nbsp;
+        span.notranslate= VERSION
+      a.btn.btn-action.secondary-color(href = "/docs/current") View Docs
