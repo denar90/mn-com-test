@@ -28,3 +28,4 @@ You'll need to rerun this command after template changes.
 ## When adding SVG
 
 Follow [these steps](./svg-steps.md).
+test
